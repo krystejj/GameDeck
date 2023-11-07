@@ -1,7 +1,40 @@
 {
 	"name": "gamedeck",
-	"version": "0.0.1",
+	"version": "0.1.0",
+	"license": "GPL-3.0-only",
+	"author": "Krystian Wiecheć <krystian.wiechec.p@skiff.com>",
+	"homepage": "https://github.com/krystejj/GameDeck",
+	"bugs": {
+		"url": "https://github.com/krystejj/GameDeck/issues"
+	},
 	"private": true,
+	"type": "module",
+	"engines": {
+		"node": "^21.0.0",
+		"yarn": "^1.22.19"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/kit": "^1.20.4",
+		"@tauri-apps/cli": "^1.5.6",
+		"@types/jquery": "^3.5.25",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"jquery": "^3.7.1",
+		"postcss": "^8.4.31",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"sass": "^1.69.5",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"tailwindcss": "^3.3.5",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -10,24 +43,5 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/adapter-static": "^2.0.3",
-		"@sveltejs/kit": "^1.20.4",
-		"@tauri-apps/cli": "^1.5.6",
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.4.2"
-	},
-	"type": "module"
+	}
 }

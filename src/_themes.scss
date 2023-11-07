@@ -1,0 +1,20 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: rgb(28, 28, 28);
+        --bg2: rgb(22, 22, 22);
+        --bg3: rgb(17, 17, 17);
+        --fg: rgb(240, 240, 240);
+        --fg2: rgb(160, 160, 160);
+        --border: rgb(50, 50, 50);
+        --accent: #5FB171;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #fff;
+        --bg2: rgb(215, 215, 215);
+        --fg: #000;
+        --border: rgb(50, 50, 50);
+    }
+}
